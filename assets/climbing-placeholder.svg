@@ -1,0 +1,17 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Climbing wall placeholder</title>
+  <desc id="desc">An abstract line drawing of a climbing wall and a route.</desc>
+  <rect width="960" height="640" fill="#172018"/>
+  <path d="M0 429C117 349 235 318 354 336C475 354 577 292 660 151C736 22 835 -8 960 58V640H0V429Z" fill="#4F7057" opacity="0.9"/>
+  <path d="M0 504C103 452 199 436 287 457C385 481 477 441 562 338C661 218 793 183 960 234V640H0V504Z" fill="#AD5B43" opacity="0.88"/>
+  <path d="M89 548C168 477 237 439 296 435C384 430 410 344 479 331C547 318 573 233 636 209C703 183 739 119 802 85" stroke="#F6F4EE" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 28"/>
+  <circle cx="150" cy="491" r="25" fill="#D6A947"/>
+  <circle cx="296" cy="435" r="22" fill="#6A9EB3"/>
+  <circle cx="479" cy="331" r="27" fill="#D6A947"/>
+  <circle cx="636" cy="209" r="20" fill="#F6F4EE"/>
+  <circle cx="802" cy="85" r="24" fill="#6A9EB3"/>
+  <path d="M755 474L827 365L876 426L927 334" stroke="#F6F4EE" stroke-width="8" stroke-linejoin="round" opacity="0.6"/>
+  <path d="M60 89H318" stroke="#F6F4EE" stroke-width="4" opacity="0.18"/>
+  <path d="M60 135H255" stroke="#F6F4EE" stroke-width="4" opacity="0.16"/>
+  <path d="M60 181H387" stroke="#F6F4EE" stroke-width="4" opacity="0.14"/>
+</svg>

@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Rom's personal homepage: cognition, mathematics, writing, climbing, notes, and research."
+    />
+    <meta name="theme-color" content="#f6f4ee" />
+    <title>Rom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <canvas class="field" id="field-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="wordmark" href="#top" aria-label="Rom home">Rom</a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#now">Now</a>
+        <a href="#research">Research</a>
+        <a href="#life">Life</a>
+        <a href="#drawer">Details</a>
+      </nav>
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle color theme">
+        <i data-lucide="sun-medium" aria-hidden="true"></i>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">Rom Pan</h1>
+          <p class="lead">
+            Undergraduate at Peking University, trained first in mathematics and now in psychology
+            and cognitive neuroscience. My main interests are theoretical neuroscience and rock climbing.
+          </p>
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button primary" href="#research">
+              <i data-lucide="brain-circuit" aria-hidden="true"></i>
+              Research
+            </a>
+            <a class="button quiet" href="#life">
+              <i data-lucide="mountain" aria-hidden="true"></i>
+              Life
+            </a>
+          </div>
+        </div>
+
+        <aside class="portrait-panel" aria-label="Personal snapshot">
+          <div class="portrait-frame">
+            <img
+              src="assets/portrait.jpg"
+              alt="Abstract placeholder for a personal portrait"
+              width="720"
+              height="900"
+            />
+          </div>
+          <div class="quick-note">
+            <span>Main threads</span>
+            <strong>Modeling Mind · On the Wall</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section now-section" id="now" aria-labelledby="now-title">
+        <div class="section-kicker">Now</div>
+        <h2 id="now-title">What I spend time on</h2>
+        <div class="thread-grid">
+          <article class="thread-card accent-green">
+            <i data-lucide="sigma" aria-hidden="true"></i>
+            <h3>Research</h3>
+            <p>
+              Mathematical modeling and analysis for the Big Questions in cognitive neuroscience.
+            </p>
+          </article>
+          <article class="thread-card accent-brick">
+            <i data-lucide="notebook-tabs" aria-hidden="true"></i>
+            <h3>Exploration</h3>
+            <p>
+              Exploring a wide range of topics in mathematics, physics, psychology, and philosophy.
+            </p>
+          </article>
+          <article class="thread-card accent-sky">
+            <i data-lucide="dumbbell" aria-hidden="true"></i>
+            <h3>Sports</h3>
+            <p>
+              Rock climbing and some other sports to keep the body and mind in shape.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="research" aria-labelledby="research-title">
+        <div>
+          <div class="section-kicker">Research</div>
+          <h2 id="research-title">Theoretical questions about mind and cognition</h2>
+          <p>
+            I moved from the School of Mathematical Sciences into the School of Psychological and
+            Cognitive Sciences at Peking University. My current interests sit around theoretical
+            neuroscience and computational cognitive neuroscience.
+          </p>
+          <p>
+            I have been a long-term undergraduate intern in Prof. Si Wu's lab, and my independent
+            undergraduate research project (under the supervision of Prof. Hang Zhang) received funding from the National Training Program of
+            Innovation for Undergraduates.
+          </p>
+        </div>
+        <div class="project-list" aria-label="Research projects">
+          <div class="project-item">
+            <span>01</span>
+            <strong>Hypothesis Generation</strong>
+            <p>How does the brain generate hypotheses about the world from sparse sensory inputs?</p>
+          </div>
+          <div class="project-item">
+            <span>02</span>
+            <strong>Space, Time and Causality</strong>
+            <p>How does the brain make non-present spatial, temporal, or causal events operative?</p>
+          </div>
+          <div class="project-item">
+            <span>03</span>
+            <strong>Cortical Abstraction</strong>
+            <p>How does the brain abstract an Actionable Latent Space from chaotic sensory inputs?</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section life-section" id="life" aria-labelledby="life-title">
+        <div class="section-heading-row">
+          <div>
+            <div class="section-kicker">Life</div>
+            <h2 id="life-title">Climbing · Writing · Sharing</h2>
+          </div>
+          <a class="text-link" href="#contact">Say hello</a>
+        </div>
+
+        <div class="life-grid">
+          <article class="life-card wide climbing-card">
+            <img src="assets/climbing-placeholder.svg" alt="Abstract climbing wall line drawing" />
+            <div>
+              <h3>Climbing</h3>
+              <p>
+                I am a member of the Mountaineering Association of Peking University. Rock climbing is part of my weekly life.
+              </p>
+            </div>
+          </article>
+          <article class="life-card">
+            <i data-lucide="pen-line" aria-hidden="true"></i>
+            <h3>Writing</h3>
+            <p>"Stoicism Point" is my WeChat Official Account where I share my thoughts, ideas, and observations.</p>
+          </article>
+          <article class="life-card">
+            <i data-lucide="handshake" aria-hidden="true"></i>
+            <h3>Sharing</h3>
+            <p>I update my course notes on Plib and offer tutoring for calculus, linear algebra, probability, and statistics.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section drawer-section" id="drawer" aria-labelledby="drawer-title">
+        <div class="section-kicker">Details</div>
+        <h2 id="drawer-title">Background and Recognition</h2>
+
+        <div class="drawer-list">
+          <details open>
+            <summary>
+              <span>Education</span>
+              <i data-lucide="chevron-down" aria-hidden="true"></i>
+            </summary>
+            <ul>
+              <li>Peking University, School of Mathematical Sciences, Class of 2023.</li>
+              <li>
+                Transferred to Peking University, School of Psychological and Cognitive Sciences,
+                Class of 2024.
+              </li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <span>Programs & Research</span>
+              <i data-lucide="chevron-down" aria-hidden="true"></i>
+            </summary>
+            <ul>
+              <li>
+                Zhang Xiangtong Elite Talent Training Program, Phase VI, School of Psychological
+                and Cognitive Sciences.
+              </li>
+              <li>
+                AI + Psychology interdisciplinary education program, jointly organized
+                by the School of Psychological and Cognitive Sciences and the School of Electronics
+                Engineering and Computer Science.
+              </li>
+              <li>
+                UCL × PKU Annual Summer School: Experimental, Methodological and Computational
+                Design in Psychology, London, July 2026.
+              </li>
+              <li>
+                Undergraduate research project funded by the National Training Program of Innovation
+                for Undergraduates, 2025-2026.
+              </li>
+              <li>
+                Visiting Student Programme, College of Science and Engineering, The University of Edinburgh, Sep–Dec 2026.
+              </li>
+              <li>
+                Participant, 8th Chinese Computational and Cognitive Neuroscience Conference.
+              </li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <span>Scholarships & Recognition</span>
+              <i data-lucide="chevron-down" aria-hidden="true"></i>
+            </summary>
+            <ul>
+              <li>Leo KoGuan Scholarship, Peking University, 2024-2025.</li>
+              <li>Peking University Merit Student, 2024-2025.</li>
+              <li>PKU Guanhao Scholarship for Overseas Study, 2026-2027.</li>
+            </ul>
+          </details>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <div class="section-kicker">Contact</div>
+          <h2 id="contact-title">You can reach me here</h2>
+          <p>
+            If we share a research interest, a climbing route, a book, a class, or a half-formed idea, I am happy to talk.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a class="button primary" href="mailto:2300010854@stu.pku.edu.cn">
+            <i data-lucide="mail" aria-hidden="true"></i>
+            Email
+          </a>
+          <a class="button quiet" href="https://github.com/Rom-Stoic" aria-label="GitHub profile">
+            <i data-lucide="github" aria-hidden="true"></i>
+            GitHub
+          </a>
+          <span class="wechat-pill">WeChat Official Account: Stoicism Point</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Rom · personal homepage</span>
+      <span>Updated 2026.</span>
+    </footer>
+  </body>
+</html>
