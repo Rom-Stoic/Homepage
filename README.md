@@ -43,22 +43,6 @@ python3 -m http.server 4173
 
 Open [http://localhost:4173](http://localhost:4173) in a browser.
 
-## GitHub Pages
-
-1. Create a new GitHub repository.
-2. Upload the contents of this folder to the repository root.
-3. Open the repository's `Settings` and select `Pages`.
-4. Under `Build and deployment`, choose `Deploy from a branch`.
-5. Select the default branch and the `/ (root)` folder.
-6. Save the settings and wait for the deployment to finish.
-
-> [!warning] Upload Location
-> Upload the contents of `个人主页`, including `index.html`. Do not upload the parent `留学`
-> folder as the repository root, because GitHub Pages needs `index.html` at the top level of the
-> selected publishing folder.
-
-See GitHub's guide to [configuring a publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
-if the Pages settings have changed.
 
 ## Updating Content
 
@@ -73,11 +57,3 @@ if the Pages settings have changed.
 After an update, preview the site locally, commit the change, and push it to GitHub. GitHub Pages
 will publish the new version from the selected branch and folder.
 
-## Before Making the Repository Public
-
-> [!warning] Public Information
-> The repository and the deployed site may be public. Review the email address, portrait,
-> academic records, awards, test scores, and any future personal photos before publishing.
-
-The current climbing image is intentionally abstract. It can be replaced later without changing
-the overall page structure.
