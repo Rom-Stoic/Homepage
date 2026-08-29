@@ -422,7 +422,7 @@ html[data-theme="dark"] .button.quiet {
 }
 
 .life-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 2rem;
 }
 
@@ -459,7 +459,7 @@ html[data-theme="dark"] .button.quiet {
   display: grid;
   gap: 0.85rem;
   margin-top: 2rem;
-  max-width: 980px;
+  max-width: 1080px;
 }
 
 .drawer-list details {
