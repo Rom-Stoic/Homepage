@@ -321,6 +321,7 @@ html[data-theme="dark"] .button.quiet {
 
 .thread-card,
 .life-card,
+.resource-card,
 .drawer-list details,
 .contact-section {
   background: color-mix(in srgb, var(--paper-soft) 86%, transparent);
@@ -418,6 +419,68 @@ html[data-theme="dark"] .button.quiet {
   display: inline-flex;
   font-weight: 800;
   padding: 0.7rem 1rem;
+  white-space: nowrap;
+}
+
+.resources-section {
+  border-bottom: 1px solid var(--line);
+}
+
+.resource-card {
+  align-items: center;
+  display: grid;
+  gap: clamp(1rem, 3vw, 1.8rem);
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  margin-top: 2rem;
+  max-width: 1080px;
+  padding: clamp(1.2rem, 3vw, 1.8rem);
+}
+
+.resource-icon {
+  align-items: center;
+  background: color-mix(in srgb, var(--gold) 18%, transparent);
+  border: 1px solid color-mix(in srgb, var(--gold) 38%, transparent);
+  border-radius: var(--radius);
+  color: var(--brick);
+  display: inline-flex;
+  height: 3rem;
+  justify-content: center;
+  width: 3rem;
+}
+
+.resource-icon svg {
+  height: 1.35rem;
+  width: 1.35rem;
+}
+
+.resource-copy {
+  max-width: 760px;
+}
+
+.resource-label {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.45rem;
+  text-transform: uppercase;
+}
+
+.resource-copy h3 {
+  font-family: Fraunces, Georgia, serif;
+  font-size: clamp(1.65rem, 3vw, 2.6rem);
+  line-height: 1;
+  margin-bottom: 0.65rem;
+}
+
+.resource-copy p:last-child {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.resource-action {
   white-space: nowrap;
 }
 
@@ -578,6 +641,16 @@ html[data-theme="dark"] .button.quiet {
     align-items: flex-start;
     display: grid;
   }
+
+  .resource-card {
+    align-items: start;
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .resource-action {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
 }
 
 @media (max-width: 640px) {
@@ -618,6 +691,14 @@ html[data-theme="dark"] .button.quiet {
   .section-heading-row {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .resource-card {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-action {
+    justify-self: stretch;
   }
 
   .button,

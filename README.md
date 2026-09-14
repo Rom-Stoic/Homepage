@@ -14,7 +14,7 @@ build step, package manager, or local dependency installation.
 
 > [!info] Site Contents
 > The homepage brings together research, education, writing, course notes, tutoring, climbing,
-> physical training, and contact links.
+> shared learning resources, physical training, and contact links.
 
 ## Repository Structure
 
@@ -56,4 +56,3 @@ Open [http://localhost:4173](http://localhost:4173) in a browser.
 
 After an update, preview the site locally, commit the change, and push it to GitHub. GitHub Pages
 will publish the new version from the selected branch and folder.
-
